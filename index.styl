@@ -13,7 +13,9 @@ html,body
 #root
   font-family: Palatino, Georgia, serif
   max-width: 1024px
-  margin: 20px auto
+  margin: 40px auto
+  @media (max-width: 1024px)
+    width: 80%
 
 .name
   font-size: 2em
@@ -36,8 +38,12 @@ html,body
 .item
   margin-bottom: 8px
 
-.inst, .dept, .title, .contest, .award
+.inst, .title, .contest, .award
   display: inline-block
+  margin-right: 10px
+
+.title
+  font-style: italic
 
 .inst, .proj, .tech, .contest
   font-weight: bold
@@ -50,3 +56,15 @@ html,body
   opacity: 0.6
   transform(scale(0.9))
 
+.section
+  &:before
+    content: " "
+    display: block
+    width: 90%
+    margin: auto
+    border-top: 1px solid #eee
+    padding-top: 15px
+    margin-top: 10px
+
+.summary
+  margin-bottom: 20px
