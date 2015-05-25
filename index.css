@@ -1,0 +1,61 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.date {
+  float: right;
+}
+#root {
+  font-family: Palatino, Georgia, serif;
+  max-width: 1024px;
+  margin: 20px auto;
+}
+.name {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+.email {
+  text-align: center;
+  margin: 5px 0 0;
+}
+.phone {
+  text-align: center;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+.table-head {
+  font-weight: bold;
+  text-align: right;
+}
+.item {
+  margin-bottom: 8px;
+}
+.inst,
+.dept,
+.title,
+.contest,
+.award {
+  display: inline-block;
+}
+.inst,
+.proj,
+.tech,
+.contest {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.glyphicon {
+  font-size: 14px;
+  vertical-align: text-top;
+  margin-left: 3px;
+  opacity: 0.6;
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}

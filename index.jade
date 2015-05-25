@@ -1,0 +1,153 @@
+doctype html
+//- basic libraries: jquery(1.10.2), d3js(3.3.11), angularjs(1.2.3), bootstrap(3.0)/semantic-ui(0.9.3/0.9.5)
+- var use = { cdn: false, og: false, favicon: true }
+- var lib = { jquery: true, d3js: false, angular: true, bootstrap: true, semantic: false }
+- var assets = "assets"
+- var thumbnail = "thumbnail.png"
+- var favicon = "thumbnail.png"
+html(lang="en")
+  head(prefix="og: http://ogp.me/ns#")
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title template
+    // libraries
+    include library.jade
+    // custom files
+    link(rel="stylesheet",type="text/css",href="index.css")
+    script(type="text/javascript",src="index.js")
+  body
+    #root
+      .name Tai Hui Wu / 吳泰輝
+      .email tkirby@gmail.com
+      .phone +886-911015216 / 0911015216 (Taiwan)
+      .summary
+        | Cofounder of foundi.info, g0v.tw and infographics.tw, expert in web technology and data visualization domain. Invited lecturer for media and communication related domains by many universities including NTU, NCTU, NCCU, NCU. Amatuer photographer specialized in nature, wedding and mountaineering.
+      hr
+      .row
+        .col-sm-3.table-head EDUCATION
+        .col-sm-8
+          .item
+            .date 1999 ~ 2005
+            .inst National Taiwan University
+            .dept Dept. of Computer Science and Information Engineering
+            .title Master Degree
+      .row
+        .col-sm-3.table-head WORK EXPERIENCE
+        .col-sm-8
+          .item
+            .date 2013 ~ now
+            .inst Foundi.info
+            .title Co-founder
+            .desc Busincess Development, Marketing, Web Frontend Developing
+          .item
+            .date 2014
+            .inst Google Taiwan Digicamp
+            .title Technical Consultant
+            .desc Consultant for web technology ( mainly html5 ) and web-based marketing campaign
+          .item
+            .date 2012 ~ now
+            .inst g0v.tw
+            .title Co-founder
+            .desc Participant, Photographer, Contributor, Missionary
+          .item
+            .date 2008 ~ 2013
+            .inst Mediatek inc.
+            .title Senior Software Engineer
+            .desc Linux kernel driver, building system development
+
+      .row
+        .col-sm-3.table-head SKILLS
+        .col-sm-8
+          .item
+            .date 1998 ~ now
+            .tech Web Related Technology
+            .desc HTML5, CSS, JavaScript, SVG, D3.js, Node.js, Django
+          .item
+            .date 2012 ~ now
+            .tech Data Visualization
+            .desc Visualization Methodology, Data Crawling and Analysis Skills
+          .item
+            .date 2008 ~ 2013
+            .tech Linux Kernel Driver
+            .desc Experience of Touch Panel Driver, I2C, AUXADC
+          .item
+            .date 2009 ~ 2013
+            .tech Android Open Platform
+            .desc Dalvik Virtual Machine, Android Framework, Binder, Debug Toolkit, Building System
+      .row
+        .col-sm-3.table-head PORTFOLIO
+        .col-sm-8
+          .item
+            .date 2015 ~ now
+            .proj 
+              | infographics.tw
+              i.glyphicon.glyphicon-globe
+            .desc Dedicated to provide Data Visualization resources
+          .item
+            .date 2014 ~ now
+            .proj 
+              | loading.io
+              i.glyphicon.glyphicon-globe
+            .desc Online toolbox for Web Designer
+          .item
+            .date 2014
+            .proj 
+              | 67kjobs.info
+              i.glyphicon.glyphicon-globe
+            .desc Dedicated to provide information of jobs with higher salary
+          .item
+            .date 2013 ~ now
+            .proj 
+              | foundi.info
+              i.glyphicon.glyphicon-globe
+            .desc Real Estate information Provider
+          .item
+            .date 2013 ~ now
+            .proj 
+              | zbryikt.github.io/visualize/
+              i.glyphicon.glyphicon-globe
+            .desc selected works of visualization projects
+          .item
+            .date 2011 ~ now
+            .proj 
+              | wallpaper.tkirby.org
+              i.glyphicon.glyphicon-globe
+            .desc selected works of photography projects
+          .item
+            .date 2010 ~ now
+            .proj 
+              | flickr.com/tkirby
+              i.glyphicon.glyphicon-globe
+            .desc photography porfolio
+          .item
+            .date 2004 ~ 2006
+            .proj
+              | www.csie.ntu.edu.tw/~b88039/slide/
+              i.glyphicon.glyphicon-globe
+            .desc TKSlide the Online sliding system
+      .row
+        .col-sm-3.table-head AWARD
+        .col-sm-8
+          .item
+            .date 2014
+            .contest National Taiwan University Journalism Award
+            .award Quality Award
+            .desc Contest Project: Taiwan Democracy Activity Record Longform Report
+          .item
+            .date 2014
+            .contest Open Data Contest
+            .award Quality Award
+            .desc Contest Project: Environment Map for Real Estate
+
+          .item
+            .date 2013
+            .contest Yahoo Hack Day 2013
+            .award Honorable Mention
+            .desc Contest Project: Cinema of Legislative Yuan
+
+          .item
+            .date 2012
+            .contest Yahoo Hack Day 2012
+            .award Honorable Mention
+            .desc Contest Project: Taiwan Government Budget Visualization
+
