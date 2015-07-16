@@ -45,7 +45,6 @@ body {
 .item {
   margin-bottom: 11px;
 }
-.inst,
 .title,
 .contest,
 .award {
@@ -56,12 +55,18 @@ body {
 .award {
   font-style: italic;
 }
-.inst,
 .proj,
 .tech,
 .contest {
   font-weight: bold;
   margin-right: 10px;
+}
+.inst {
+  font-weight: bold;
+  display: inline-block;
+}
+.title {
+  margin-left: 10px;
 }
 .desc {
   opacity: 0.9;
