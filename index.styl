@@ -120,3 +120,52 @@ a
     &:before
       padding-top: 10px
       margin-top: 7px
+
+
+.has-tips
+  position: relative
+  overflow: visible
+  .hover-tip
+    display: block
+    opacity: 0
+    z-index: -1
+    transition(all 0.5s linear)
+
+
+.btn.has-tips:hover, .has-tips:hover, .has-tips.tip-on
+  .hover-tip
+    display: block
+    opacity: 1
+    z-index: 10
+
+.hover-tip
+  background: #000
+  border-radius: 3px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  min-width: 100px
+  color: #fff
+  padding: 5px 10px
+  text-align: center
+  z-index: index(order, 'hover-tip')
+  font-size: 13px
+  a
+    color: #73baf7
+  &:before
+    width: 10px
+    height: 10px
+    position: absolute
+    top: -5px
+    left: 50%
+    margin-left: -7px
+    background: #000
+    display: block
+    content: " "
+    transform(rotate(45deg))
+  top: auto
+  bottom: 100%
+  margin-bottom: 7px
+  &:before
+    top: auto
+    bottom: -5px
