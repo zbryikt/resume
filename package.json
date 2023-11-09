@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "npx server -r web -o true",
-    "deploy": "npx deploy web/staatic gh-pages"
+    "deploy": "npx deploy web/static gh-pages"
   },
   "devDependencies": {
     "@loadingio/bootstrap.ext": "^0.0.11",
